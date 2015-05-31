@@ -2,19 +2,19 @@
 
 
 var IndexModel = require('../models/index');
+var Book = require('../models/bookModel');
 
-
-module.exports = function (router) {
-
-    var model = new IndexModel();
-
-
+module.exports = function (router) { 
     router.get('/', function (req, res) {
-        
-        
-        res.render('index', model);
-        
-        
+    Book.find({}, function(err, books){
+    	if(err){
+    		console.log(err);
+    	}
+    	var model = {
+    		books: books
+    	}
+    	res.render('index', model);  
+    });            
+                     
     });
-
 };
