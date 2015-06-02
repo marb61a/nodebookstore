@@ -10,3 +10,8 @@ It ues the following technologies
 - Less
 - Zurb Foundation
 - RequireJs
+- 
+
+
+**************************
+!!!!! You must have mongo running!

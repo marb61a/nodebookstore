@@ -32,7 +32,7 @@
 	      <td>1343434r545455</td>
 	      <td>Book Sample</td>
 	      <td>Some Category</td>
-	      <td><a class="button tiny" href="/manage/books/edit/1">Edit</a></td>
+	      <td><a class="button tiny" href="/manage/books/edit/{._id}">Edit</a></td>
 	      <td><a class="button tiny alert removeBook" href="#">Delete</a></td>
 	    </tr>
 	  </tbody>
