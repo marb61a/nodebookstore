@@ -1,16 +1,15 @@
 'use strict';
-
 var Book = require('../models/bookModel');
 var Category = require('../models/categoryModel');
 
-module.exports = function(router) {
-    router.get('/', function(req, res){
-        
-        // Get session cart
+
+module.exports = function (router) {
+    router.get('/', function (req, res) {   
+        // Get cart from session
         var cart = req.session.cart;
-        var displayCart = {items:[], total:0};
-        var total = 0;
-        
+        var displayCart = {items:[], total:0}
+        var total =0;
+
         // Get total
         for(var item in cart){
             displayCart.items.push(cart[item]);
@@ -23,8 +22,8 @@ module.exports = function(router) {
             cart: displayCart
         });    
     });
-    
-    router.post('/:id', function(req, res){
+
+    router.post('/:id', function (req, res) {   
         req.session.cart = req.session.cart || {};
         var cart = req.session.cart;
 
@@ -44,9 +43,8 @@ module.exports = function(router) {
                     qty: 1
                 }
             }
-            
+
             res.redirect('/cart');
-        });
-        
+        });      
     });
 };

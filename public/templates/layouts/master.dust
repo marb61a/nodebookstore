@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/css/app.css" />
     <link rel="stylesheet" href="/css/foundation.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    
 </head>
 <body>
 <div class="row">
@@ -15,7 +14,7 @@
 	</div>
 </div>
 <div class="row">
-    <div class="large-12 columns">
+	<div class="large-12 columns">
 		<nav class="top-bar" data-topbar role="navigation">
 			<section class="top-bar-section">
 				<ul class="left">
@@ -28,17 +27,17 @@
 	</div>
 </div>
 <div class="row">
-    <div class="large-12 columns">
-    	{messages|s}
-        {+body /}
-    </div>
+	<div class="large-12 columns">
+		{messages|s}
+		{+body /}
+	</div>
 </div>
 <footer>
 	<div class="row">
 		<div class="large-12 columns">
 			<p>TechBooks &copy; 2015 | <a href="/manage">Manage</a></p>
-	    </div>
-    </div>
+	</div>
+</div>
 </footer>
 
 <script data-main="/js/app" src="/components/requirejs/require.js"></script>
