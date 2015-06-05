@@ -17,7 +17,7 @@ module.exports = function(router){
                 book : book
             };
             
-             res.render('books/details'); 
+             res.render('books/details', model); 
         });
                    
     });
